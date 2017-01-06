@@ -13,7 +13,7 @@ function getCities() {
           }
         }
         else if (data.results[0].postcode_localities) {
-          if (data.results[0].address_components[4].short_name == "FR") {
+          if ((data.results[0].address_components[4].short_name == "FR")||(data.results[0].address_components[3].short_name == "FR")) {
           $.each(data.results[0].postcode_localities, function(index,data){
             console.log(data);
           });
