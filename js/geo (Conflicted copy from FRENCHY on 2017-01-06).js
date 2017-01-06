@@ -18,6 +18,9 @@ function getCities() {
             console.log(data);
           });
         }
+        else{
+          alert("Veuillez saisir un pays Français.");
+        }
       }
     });
 }
