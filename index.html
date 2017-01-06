@@ -3,19 +3,22 @@
 <head>
 
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="lib/p5.js" type="text/javascript"></script>
+    <script src="js/sketch.js" type="text/javascript"></script>
 
 </head>
 
 <body>
 
     <div class="contain">
-        <div class="header_s"> <h1>POSTAL FINDER</h1>
+        <div class="header_s">
+            <h1>POSTAL FINDER</h1>
         </div>
         <div class="title_s">
             <h1> Enter Your Postal Code</h1>
         </div>
         <div class="form_s">
-            <form method="POST" action="#">
+            <form method="POST" action="getCities()">
                 <input type="text" value="" class="input_s" />
                 <input type="submit" value="Submit" class="button_form" />
             </form>
@@ -25,6 +28,7 @@
             <canvas></canvas>
         </div>
       -->
+        <div id="render"></div>
 
         <div class="footer_s">Copyright</div>
 
