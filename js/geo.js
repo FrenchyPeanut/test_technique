@@ -18,10 +18,15 @@ function getCities() {
         if (!data.results[0].postcode_localities) {
             if ((data.results[0].address_components[3].short_name == "FR") || (data.results[0].address_components[4].short_name == "FR")) {
                 //console.log(data.results[0].address_components[1].long_name);
+                var url2 = "https://www.google.fr/maps/place/" + data.results[0].address_components[1].long_name;
+                var a = document.createElement('a');
+                var text = document.createTextNode(data.results[0].address_components[1].long_name);
+                a.appendChild(text);
+                a.href = url2;
+                a.target = "_blank";
                 var li = document.createElement('li');
                 li.setAttribute('class', 'item_l');
-                var text = document.createTextNode(data.results[0].address_components[1].long_name);
-                li.appendChild(text);
+                li.appendChild(a);
                 ul.appendChild(li);
             } else {
                 alert("Veuillez saisir un pays Français.");
@@ -30,10 +35,15 @@ function getCities() {
             if ((data.results[0].address_components[4].short_name == "FR") || (data.results[0].address_components[3].short_name == "FR")) {
                 $.each(data.results[0].postcode_localities, function(index, data) {
                     //console.log(data);
+                    var url2 = "https://www.google.fr/maps/place/" + data;
+                    var a = document.createElement('a');
+                    var text = document.createTextNode(data);
+                    a.appendChild(text);
+                    a.href = url2;
+                    a.target = "_blank";
                     var li = document.createElement('li');
                     li.setAttribute('class', 'item_l');
-                    var text = document.createTextNode(data);
-                    li.appendChild(text);
+                    li.appendChild(a);
                     ul.appendChild(li);
                 });
             } else {
