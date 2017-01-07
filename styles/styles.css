@@ -1,26 +1,139 @@
-/*@rel sheet*/
 
-
-.button_form{
-  border-radius: 50px;
-  color: white;
-  margin: 20px;
-  font-size: 30px;
-  font-weight: bold;
-
+@font-face {
+    font-family: 'Exo';
+    src: url('../ttf/Exo-Regular.otf');
+    /* IE9 Compat Modes */
+    src: url('../ttf/Exo-Regular.otf') format('truetype');
+    /* Legacy iOS */
 }
 
-.form_s{
-  text-align: center;
-  padding-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-
+body {
+    margin: 0;
 }
 
-.input_s{
-  width: 100%;
-  height: 10%;
-  font-size: 20px;
-  text-align: center;
+#header_s {
+    background: black;
+    width: auto;
+    height: 80px;
+}
+
+.img_s {
+    width: auto;
+    height: 100%;
+    display: inline;
+    float: left;
+}
+
+#header_s h1 {
+    color: white;
+    text-align: left;
+    font-family: Exo;
+    font-size: 40px;
+    left: 10px;
+    position: relative;
+    top: 18px;
+}
+
+@media screen and (max-width: 500px) {
+    #header_s h1 {
+        color: white;
+        text-align: left;
+        font-family: Exo;
+        font-size: 30px;
+        left: 15px;
+        position: relative;
+        top: 23px;
+    }
+}
+
+#head_l {
+    margin-top: 60px;
+    text-align: center;
+    font-family: Exo;
+    font-size: 30px;
+}
+
+#city_l {
+    margin-top: 10px;
+    text-align: center;
+    font-family: Exo;
+    font-size: 30px;
+}
+
+#city_l a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#render {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.item_l {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contain {
+    width: auto;
+    height: 100%;
+}
+
+.title_s {
+    margin-top: 10%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Exo;
+}
+
+.button_form {
+    border-radius: 40px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    background: black;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Exo;
+    border: none;
+}
+
+.form_s {
+    text-align: center;
+    padding-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input_s {
+    width: 90%;
+    height: 10%;
+    font-size: 20px;
+    text-align: center;
+    font-family: Exo;
+}
+
+.footer_s a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer_s {
+    width: 100%;
+    height: 30px;
+    color: white;
+    background: black;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-family: Exo;
+    padding-top: 10px;
 }

@@ -2,26 +2,32 @@
 
 <head>
 
-    <link rel="stylesheet" href="styles/styles.css" />
+<link rel="stylesheet" href="styles/styles.css" />
 
+<title>Postal-Finder</title>
+    <link rel="icon" type="image/png" href="eye.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+	
+	<script src="js/geo.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <div class="form_s">
-        <form method="POST">
-
-
-            <input type="text" value="Enter your Postal Code" class="input_s" />
-            <input type="submit" value="Submit" class="button_form" />
-
-
-        </form>
+    <div class="contain">
+	 <div id="header_s">
+            <img src="img/eye.gif" width="20px" height="auto" class="img_s">
+            <h1>POSTAL FINDER</h1>
+        </div>
+        <div class="title_s">
+		 <h1> Entrez un code postal :</h1>
+        </div>
+        <div class="form_s">
+            <form method="POST" action="javascript:activate()">
+			<input type="text" class="input_s" id="zip" />
+			<input type="submit" value="Chercher" class="button_form" />
+			</form>
+        </div>
+        <div id="render"></div>
+		<div class="footer_s">Made with the <a target="_blank" href="https://developers.google.com/maps/documentation/geocoding/intro?csw=1">Geocoding API</a>.</div>
     </div>
-
-    <div>
-        <canvas></canvas>
-    </div>
-
 </body>
-
 </html>
